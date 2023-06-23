@@ -36,11 +36,13 @@ function init() {
       alert(convertion.message);
     }
       
+    /*
     gtag( 'event', 'convertRomanToInteger_calculated', {
       'modeCheckbox' : modeCheckbox.checked,
       'inputValue' : inputValue,
       'convertion' : convertion
     })
+    */
   });
 
 }
