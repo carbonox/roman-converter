@@ -35,6 +35,12 @@ function init() {
     } else {
       alert(convertion.message);
     }
+      
+    gtag( 'event', 'convertRomanToInteger_calculated', {
+      'modeCheckbox' : modeCheckbox.checked,
+      'inputValue' : inputValue,
+      'convertion' : convertion
+    })
   });
 
 }
@@ -95,6 +101,8 @@ const convertRomanToInteger = function(roman) {
 
   response.value = sum;
   response.result = true;
+
+
 
   return response;
 };
